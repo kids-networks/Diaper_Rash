@@ -11,9 +11,9 @@ def decrypt() :
     pass
 while True :
     todo = userInput()
-    if todo.upper() = "ENCRYPT" :
+    if todo.upper() == "ENCRYPT" :
         encrypt()
-    elif todo.upper() = "DECRYPT" :
+    elif todo.upper() == "DECRYPT" :
         decrypt()
     else :
         break

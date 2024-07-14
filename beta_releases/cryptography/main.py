@@ -1,19 +1,8 @@
 from tkinter import messagebox, simpledialog
-def userInput() :
-    todo = simpledialog.askstring("Cryptography", "Do you want to encrypt or decrypt?")
-    return todo
-def message() :
-    message = simpledialog.askstring("Message", "Input your message.")
-    return message
-def encrypt() :
-    pass
-def decrypt() :
-    pass
+message = None
+def strrev(message) :
+    return message[::-1]
 while True :
-    todo = userInput()
-    if todo.upper() == "ENCRYPT" :
-        encrypt()
-    elif todo.upper() == "DECRYPT" :
-        decrypt()
-    else :
-        break
+    message = simpledialog.askstring("Cryptography", "Enter your message to reverse it.")
+    reverse = strrev(message)
+    messagebox.showinfo("Cryptography", reverse)

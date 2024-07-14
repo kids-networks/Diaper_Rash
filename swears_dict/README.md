@@ -1,2 +1,2 @@
 # Swears Dictionary
-Find info about the popular Swears Dictionary Application here!
+Find info about the popular **Swears Dictionary** Application here!

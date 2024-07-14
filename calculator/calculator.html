@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<meta charset = "utf-8">
+
+<head>
+<title>Calculator</title>
+<html lang = "en">
+</head>
+
+<body>
+<h1>Calculator</h1>
+<input type = "text" id = "num1" placeholder = "Type first number here...">
+<br>
+<input type = "text" id = "num2" placeholder = "Type second number here...">
+<br>
+<input type = "text" id = "method" placeholder = "Type calculation method here...">
+<br>
+<button onclick = "calculate()">Calculate</button>
+<p id = "output"></p>
+<script>
+function calculate()  {
+  var num1 = Number(document.getElementById("num1").value);
+  var num2 = Number(document.getElementById("num2").value);
+  var method = document.getElementById("method").value;
+  var awnser;
+  if (method == "+")  {
+    awnser = num1 + num2;
+    document.getElementById("output").innerHTML = awnser;
+  }
+  if (method == "-")  {
+    awnser = num1 - num2;
+    document.getElementById("output").innerHTML = awnser;
+  }
+  if (method == "*")  {
+    awnser = num1 * num2;
+    document.getElementById("output").innerHTML = awnser;
+  }
+  if (method == "/")  {
+    awnser = num1 / num2;
+    document.getElementById("output").innerHTML = awnser;
+  }
+}
+</script>
+<style>
+body  {
+  background-color: Aqua;
+  font-family: sans-serif;
+}
+</style>
+</body>
+</html>
